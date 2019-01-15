@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
 :root {
-  --mainWhite: #f5f5f5;
+  --mainWhite: black;
   --mainGreen: #80cfa9;
   --mainBlack: #333333;
   --mainRed: #d62828;
@@ -8,11 +9,11 @@
 body {
   background: var(--mainWhite);
   color: #333333;
+  font-family: 'Abel', sans-serif;
 }
 .btn-green {
-  border-color: var(--mainGreen);
   background: transparent;
-  color: var(--mainGreen);
+  color: var(--mainWhite);
 }
 .btn-green:hover {
   background: var(--mainGreen);
@@ -61,3 +62,43 @@ body {
 .showItem {
   display: block;
 }
+h3{
+    color:chartreuse;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 30px;
+   
+}
+h5{
+    color: chartreuse;
+    letter-spacing: 1px;
+    
+}
+.btn{
+    background: linear-gradient(90deg, lightgreen, chartreuse, green, lightgreen );
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-size: 400%;
+    border-radius: 30px;
+    z-index: 1;
+}
+.btn:hover{
+  color: black;
+  filter: brightness(50px);
+  text-decoration: none;
+  animation: animate 8s linear infinite;
+}
+@keyframes animate {
+      0%{
+        background-position: 0%;
+      }
+      100%{
+        background-position: 400%;
+      }
+}
+
+    
+
+
